@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NavbarModule } from '@shared/navbar/navbar.module';
 import { ToastrModule } from 'ngx-toastr';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,7 +14,6 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NavbarModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot({}),
     HttpClientModule
