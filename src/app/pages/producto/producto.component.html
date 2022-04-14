@@ -2,23 +2,23 @@
     <h3>CREACION PRODUCTOS</h3>
     <br>
     <label for="formGroupExampleInput" class="form-label">Nombre del producto</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese nombre del producto">
+    <input type="text" class="form-control" [(ngModel)]="producto.nombre" id="formGroupExampleInput" placeholder="Ingrese nombre del producto">
 </div>
 <br>
 
 <div class="mb-3">
     <label for="formGroupExampleInput2" class="form-label">Descripcion del Producto</label>
-    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Caracteristicas (resumen)">
+    <input type="text" class="form-control" [(ngModel)]="producto.descripcion" id="formGroupExampleInput2" placeholder="Caracteristicas (resumen)">
 </div>
 <br>
 <div class="mb-3">
     <label for="formGroupExampleInput2" class="form-label">Precio del Prodcuto</label>
-    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Precio (moneda colombiana)">
+    <input type="text" class="form-control" [(ngModel)]="producto.precio" id="formGroupExampleInput2" placeholder="Precio (moneda colombiana)">
 </div>
 <br>
 <div class="col-12">
     <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <input class="form-check-input" [(ngModel)]="producto.disponible" type="checkbox" id="gridCheck">
         <label class="form-check-label" for="gridCheck">
             Disponibilidad contraentrega.
         </label>
@@ -27,12 +27,12 @@
 <br>
 <div class="mb-3">
     <label for="formGroupExampleInput2" class="form-label">Imagen URL</label>
-    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="pegue url de la imagen">
+    <input type="text" class="form-control" [(ngModel)]="producto.imagen_64" id="formGroupExampleInput2" placeholder="pegue url de la imagen">
 </div>
 
 
 <br>
 <div class="col-12">
-    <button type="submit" class="btn btn-primary">Crear Producto(s)</button>
+    <button type="submit" class="btn btn-primary" (click)="guardarP(producto)">Crear Producto(s)</button>
 </div>
 <br>

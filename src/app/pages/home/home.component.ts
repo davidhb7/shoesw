@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';//, OnInit 
+import { Component} from '@angular/core';//, OnInit
 
 @Component({
   selector: 'app-home',
@@ -7,8 +7,8 @@ import { Component} from '@angular/core';//, OnInit
 })
 export class HomeComponent  { //poner "implements OnInit" despues de homecomponent
 
-  //constructor() { }
+  constructor() { }
 
-  //ngOnInit(): void { }
+  ngOnInit(): void { }
 
 }

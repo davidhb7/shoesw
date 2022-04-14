@@ -10,7 +10,7 @@
 
 
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      
+
       <ng-container *ngIf="(user$ | async)=== null; else logOutTemplate">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
@@ -21,21 +21,26 @@
           <li class="nav-item">
             <a class="nav-link" [routerLink]="['/sign-up']">Registrarse</a>
           </li>
-          
+
+
+
 
         </ul>
       </ng-container>
-      
-      
-      
+
+
+
 
       <ng-template #logOutTemplate>
-        
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+        <ul class="navbar-nav ms-auto ">
           <li class="nav-item">
             <a class="nav-link" [routerLink]="['/producto']">Productos</a>
           </li>
 
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/cartaproducto']">Vista Productos</a>
+          </li>
           <li class="nav-item">
             <a [routerLink]="['/home']" (click)="onLogout()" class="nav-link">Logout</a>
           </li>

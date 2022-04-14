@@ -7,7 +7,9 @@ export const environment = {
   supabase:{
     publicKey:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFjcHJtZWRyZXJpYWdzbHhiYnN4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDcyOTc1NDYsImV4cCI6MTk2Mjg3MzU0Nn0.apbY2MTVfDSLQixLswpCXLaLjCZM4gHEKzfXVp28Ui4',
     url:'https://qcprmedreriagslxbbsx.supabase.co'
-  }
+  },
+
+  url:'http://localhost:8000'
 };
 
 /*
