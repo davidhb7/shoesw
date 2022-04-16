@@ -1,0 +1,26 @@
+<body>
+	<div class="main">
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form [formGroup]="registroForm">
+					<label for="chk" aria-hidden="true">Registro</label>
+					<input type="text" name="nombre" formControlName="nombre" placeholder="Nombre" required="">
+          <input type="text" name="apellidos" formControlName="apellidos" placeholder="Apellido" required="">
+          <input type="number" name="cedula" formControlName="cedula" placeholder="Cedula" required="">
+					<input type="email" name="email" formControlName="email" placeholder="Correo" required="">
+					<input type="password" name="pswd" formControlName="password" placeholder="Contraseña" required="">
+					<button (click)="registroCliente()">Registro</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form [formGroup]="loginForm">
+					<label for="chk" aria-hidden="true">Entrar</label>
+					<input type="email" name="email" formControlName="email" placeholder="Correo" required="">
+					<input type="password" name="password" formControlName="password" placeholder="Contraseña" required="">
+					<button (click)="loginCliente()">Iniciar Sesion</button>
+				</form>
+			</div>
+	</div>
+</body>

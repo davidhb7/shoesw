@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { InicioRoutingModule } from './inicio-routing.module';
 import { LandingComponent } from './landing/landing.component';
+import { RouterModule } from '@angular/router';
+import { AuthModule } from '../auth/auth.module';
 
 
 @NgModule({
@@ -11,7 +13,9 @@ import { LandingComponent } from './landing/landing.component';
   ],
   imports: [
     CommonModule,
-    InicioRoutingModule
+    InicioRoutingModule,
+    AuthModule,
+    RouterModule
   ]
 })
 export class InicioModule { }

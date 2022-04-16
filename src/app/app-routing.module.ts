@@ -6,11 +6,10 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./inicio/inicio.module').then(m => m.InicioModule) },
-  // {
-  //   path: 'sign-in',
-  //   loadChildren: () => import('./pages/auth/sign-in/sign-in.module').then(m => m.SignInModule),
-  //   canActivate:[AuthGuard]
-  // },
+  {
+    path: 'auth',
+    loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule),
+  },
   // {
   //   path: 'sign-up',
   //   loadChildren: () => import('./pages/auth/sign-up/sign-up.module').then(m => m.SignUpModule),
@@ -24,7 +23,7 @@ const routes: Routes = [
   // },
   // {path: 'cartaproducto', component: CartaproductoComponent },
 
-  {path:'**', redirectTo:'/sign-in', pathMatch:'full'},
+  // {path:'**', redirectTo:'/sign-in', pathMatch:'full'},
 ];
 
 @NgModule({

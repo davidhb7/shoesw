@@ -9,7 +9,8 @@ export const environment = {
     url:'https://qcprmedreriagslxbbsx.supabase.co'
   },
 
-  url:'http://localhost:8000'
+  url:'http://localhost:8000',
+  urlBase: 'http://localhost:9090'
 };
 
 /*
