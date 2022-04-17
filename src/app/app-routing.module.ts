@@ -10,11 +10,10 @@ const routes: Routes = [
     path: 'auth',
     loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule),
   },
-  // {
-  //   path: 'sign-up',
-  //   loadChildren: () => import('./pages/auth/sign-up/sign-up.module').then(m => m.SignUpModule),
-  //   canActivate:[AuthGuard]
-  // },
+  {
+    path: 'productos',
+    loadChildren: () => import('./productos/productos.module').then(m => m.ProductosModule),
+  },
 
   // {
   //   path: 'producto',
