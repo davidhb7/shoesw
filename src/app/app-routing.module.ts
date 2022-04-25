@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CarritoCComponent } from './productos/carrito-c/carrito-c.component';
+import { ListaProductosComponent } from './productos/lista-productos/lista-productos.component';
+import { VistaproComponent } from './productos/vistapro/vistapro.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'/home', pathMatch:'full'},
@@ -14,6 +17,10 @@ const routes: Routes = [
     path: 'productos',
     loadChildren: () => import('./productos/productos.module').then(m => m.ProductosModule),
   },
+
+  {path: 'vistapro', component: VistaproComponent },
+  {path: 'lista-productos', component: ListaProductosComponent},
+  {path: 'carrito-c', component: CarritoCComponent}
 
   // {
   //   path: 'producto',

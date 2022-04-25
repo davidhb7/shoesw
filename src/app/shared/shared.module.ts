@@ -3,13 +3,21 @@ import { CommonModule } from '@angular/common';
 
 import { SharedRoutingModule } from './shared-routing.module';
 import { LoginComponent } from '../auth/login/login.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
+
+    NavbarComponent
   ],
   imports: [
     CommonModule,
     SharedRoutingModule
+  ],
+  exports: [
+    NavbarComponent
   ]
+
+
 })
 export class SharedModule { }

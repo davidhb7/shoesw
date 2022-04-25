@@ -78,7 +78,7 @@ export class LoginComponent implements OnInit {
           'Bienvenido!' + ' ' + clie.nombre + ' ' + clie.apellidos,
           'success'
         );
-        this.router.navigate(['/home']);
+        this.router.navigate(['/productos/listaProductos']);
       }
     })
   }
